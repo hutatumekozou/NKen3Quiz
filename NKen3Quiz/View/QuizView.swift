@@ -40,8 +40,19 @@ struct QuizView: View {
                         .disabled(answered)
                     }
 
-                    if let exp = q.explanation, answered {
-                        Text(exp).font(.title).bold()
+                    if answered {
+                        // 正解/不正解表示
+                        if let selectedIndex = selected {
+                            Text(selectedIndex == q.answerIndex ? "正解" : "不正解")
+                                .font(.title)
+                                .bold()
+                                .foregroundColor(selectedIndex == q.answerIndex ? .red : .blue)
+                        }
+                        
+                        // 解説文
+                        if let exp = q.explanation {
+                            Text(exp).font(.title).bold()
+                        }
                     }
 
                     Spacer()
