@@ -3,12 +3,11 @@ import SwiftUI
 
 struct HomeView: View {
     @StateObject private var store = QuestionStore.shared
-    @State private var selectedCategory: String?
-
+    @StateObject private var router = NavigationRouter()
     let columns = [GridItem(.flexible()), GridItem(.flexible())]
 
     var body: some View {
-        NavigationView {
+        NavigationStack(path: $router.path) {
             ZStack {
                 // 薄い水色の幾何学模様背景
                 GeometricBackground()
@@ -16,7 +15,10 @@ struct HomeView: View {
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 16) {
                         ForEach(store.categories, id: \.self) { cat in
-                            NavigationLink(destination: QuizView(category: cat)) {
+                            Button {
+                                print("[Nav] push quiz:", cat)
+                                router.push(.quiz(cat))
+                            } label: {
                                 Text(cat)
                                     .font(.headline)
                                     .frame(maxWidth: .infinity, minHeight: 64)
@@ -31,11 +33,16 @@ struct HomeView: View {
                 }
             }
             .navigationTitle("N検定3級試験用クイズ")
+            .navigationDestination(for: NavigationRouter.Route.self) { route in
+                switch route {
+                case .quiz(let cat):
+                    QuizView(category: cat).environmentObject(router)
+                case .result(let score):
+                    ResultView(score: score).environmentObject(router)
+                }
+            }
         }
-        .navigationViewStyle(StackNavigationViewStyle())
-        .onAppear {
-            // 起動時に一度広告をプリロードしておく
-            AdsManager.shared.preload()
-        }
+        .environmentObject(router)
+        .onAppear { AdsManager.shared.preload() }
     }
 }
