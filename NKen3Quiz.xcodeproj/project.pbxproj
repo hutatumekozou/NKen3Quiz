@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1111111111111111111111111 /* NKen3QuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2222222222222222222222222 /* NKen3QuizApp.swift */; };
+		A3333333333333333333333333 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4444444444444444444444444 /* AppDelegate.swift */; };
+		A5555555555555555555555555 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6666666666666666666666666 /* HomeView.swift */; };
+		A7777777777777777777777777 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8888888888888888888888888 /* QuizView.swift */; };
+		A9999999999999999999999999 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1111111111111111111111111 /* ResultView.swift */; };
+		B2222222222222222222222222 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3333333333333333333333333 /* Question.swift */; };
+		B4444444444444444444444444 /* QuestionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5555555555555555555555555 /* QuestionStore.swift */; };
+		B6666666666666666666666666 /* AdsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7777777777777777777777777 /* AdsManager.swift */; };
+		B8888888888888888888888888 /* UIRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9999999999999999999999999 /* UIRoot.swift */; };
+		C1111111111111111111111111 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = C2222222222222222222222222 /* questions.json */; };
+		C3333333333333333333333333 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4444444444444444444444444 /* Assets.xcassets */; };
+		C5555555555555555555555555 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = C6666666666666666666666666 /* GoogleMobileAds */; };
+		D2222222222222222222222222 /* GeometricBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3333333333333333333333333 /* GeometricBackground.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A0000000000000000000000000 /* NKen3Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NKen3Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2222222222222222222222222 /* NKen3QuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKen3QuizApp.swift; sourceTree = "<group>"; };
+		A4444444444444444444444444 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6666666666666666666666666 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A8888888888888888888888888 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		B1111111111111111111111111 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		B3333333333333333333333333 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		B5555555555555555555555555 /* QuestionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionStore.swift; sourceTree = "<group>"; };
+		B7777777777777777777777777 /* AdsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsManager.swift; sourceTree = "<group>"; };
+		B9999999999999999999999999 /* UIRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRoot.swift; sourceTree = "<group>"; };
+		C2222222222222222222222222 /* questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
+		C4444444444444444444444444 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1111111111111111111111111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3333333333333333333333333 /* GeometricBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricBackground.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1111111111111111111111111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5555555555555555555555555 /* GoogleMobileAds in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1111111111111111111111111 = {
+			isa = PBXGroup;
+			children = (
+				F2222222222222222222222222 /* NKen3Quiz */,
+				F3333333333333333333333333 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2222222222222222222222222 /* NKen3Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				F4444444444444444444444444 /* App */,
+				F5555555555555555555555555 /* View */,
+				F6666666666666666666666666 /* Model */,
+				F7777777777777777777777777 /* Ads */,
+				F8888888888888888888888888 /* Util */,
+				F9999999999999999999999999 /* Resources */,
+				C4444444444444444444444444 /* Assets.xcassets */,
+				D1111111111111111111111111 /* Info.plist */,
+			);
+			path = NKen3Quiz;
+			sourceTree = "<group>";
+		};
+		F3333333333333333333333333 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0000000000000000000000000 /* NKen3Quiz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4444444444444444444444444 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A2222222222222222222222222 /* NKen3QuizApp.swift */,
+				A4444444444444444444444444 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F5555555555555555555555555 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6666666666666666666666666 /* HomeView.swift */,
+				A8888888888888888888888888 /* QuizView.swift */,
+				B1111111111111111111111111 /* ResultView.swift */,
+				D3333333333333333333333333 /* GeometricBackground.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F6666666666666666666666666 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3333333333333333333333333 /* Question.swift */,
+				B5555555555555555555555555 /* QuestionStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7777777777777777777777777 /* Ads */ = {
+			isa = PBXGroup;
+			children = (
+				B7777777777777777777777777 /* AdsManager.swift */,
+			);
+			path = Ads;
+			sourceTree = "<group>";
+		};
+		F8888888888888888888888888 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B9999999999999999999999999 /* UIRoot.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		F9999999999999999999999999 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C2222222222222222222222222 /* questions.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		G1111111111111111111111111 /* NKen3Quiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = G2222222222222222222222222 /* Build configuration list for PBXNativeTarget "NKen3Quiz" */;
+			buildPhases = (
+				G3333333333333333333333333 /* Sources */,
+				E1111111111111111111111111 /* Frameworks */,
+				G4444444444444444444444444 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NKen3Quiz;
+			packageProductDependencies = (
+				C6666666666666666666666666 /* GoogleMobileAds */,
+			);
+			productName = NKen3Quiz;
+			productReference = A0000000000000000000000000 /* NKen3Quiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		H1111111111111111111111111 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					G1111111111111111111111111 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = H2222222222222222222222222 /* Build configuration list for PBXProject "NKen3Quiz" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1111111111111111111111111;
+			packageReferences = (
+				H3333333333333333333333333 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
+			productRefGroup = F3333333333333333333333333 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				G1111111111111111111111111 /* NKen3Quiz */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		G4444444444444444444444444 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1111111111111111111111111 /* questions.json in Resources */,
+				C3333333333333333333333333 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		G3333333333333333333333333 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1111111111111111111111111 /* NKen3QuizApp.swift in Sources */,
+				A3333333333333333333333333 /* AppDelegate.swift in Sources */,
+				A5555555555555555555555555 /* HomeView.swift in Sources */,
+				A7777777777777777777777777 /* QuizView.swift in Sources */,
+				A9999999999999999999999999 /* ResultView.swift in Sources */,
+				B2222222222222222222222222 /* Question.swift in Sources */,
+				B4444444444444444444444444 /* QuestionStore.swift in Sources */,
+				B6666666666666666666666666 /* AdsManager.swift in Sources */,
+				B8888888888888888888888888 /* UIRoot.swift in Sources */,
+				D2222222222222222222222222 /* GeometricBackground.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		I1111111111111111111111111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		I2222222222222222222222222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		I3333333333333333333333333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7S47X97348;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NKen3Quiz/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.NKen3Quiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		I4444444444444444444444444 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7S47X97348;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NKen3Quiz/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.NKen3Quiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		G2222222222222222222222222 /* Build configuration list for PBXNativeTarget "NKen3Quiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				I3333333333333333333333333 /* Debug */,
+				I4444444444444444444444444 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		H2222222222222222222222222 /* Build configuration list for PBXProject "NKen3Quiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				I1111111111111111111111111 /* Debug */,
+				I2222222222222222222222222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		H3333333333333333333333333 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C6666666666666666666666666 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = H3333333333333333333333333 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = H1111111111111111111111111 /* Project object */;
+}
